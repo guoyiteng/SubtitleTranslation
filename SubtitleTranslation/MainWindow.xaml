@@ -1,0 +1,22 @@
+﻿<Window x:Class="SubtitleTranslation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SubtitleTranslation"
+        mc:Ignorable="d"
+        Title="SubtitleTranslation" Height="244.667" Width="525">
+    <Grid Height="215" Margin="0,0,-0.333,0.333" VerticalAlignment="Top">
+        <Button x:Name="button" Content="开始翻译" HorizontalAlignment="Left" Height="40" Margin="375,69,0,0" VerticalAlignment="Top" Width="125" Click="button_Click"/>
+        <Button x:Name="button1" Content="选择字幕" HorizontalAlignment="Left" Height="36" Margin="417,10,0,0" VerticalAlignment="Top" Width="83" Click="button1_Click"/>
+        <Label x:Name="label" Content="" HorizontalAlignment="Left" Height="36" Margin="10,10,0,0" VerticalAlignment="Top" Width="392" BorderThickness="1" BorderBrush="Black" FontSize="13.333"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="14,99,0,0" IsSynchronizedWithCurrentItem="False">
+            <ComboBoxItem Content="高中"/>
+            <ComboBoxItem Content="四六级"/>
+            <ComboBoxItem Content="托福"/>
+            <ComboBoxItem Content="SAT"/>
+        </ComboBox>
+        <Label x:Name="label1" Content="选择英语水平" HorizontalAlignment="Left" Height="32" Margin="14,62,0,0" VerticalAlignment="Top" Width="124" FontSize="16"/>
+        <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="490" Margin="10,151,0,0"/>
+    </Grid>
+</Window>
